@@ -3,7 +3,7 @@ import Book from '../Book/Book'
 
 import './BookList.css'
 
-const bookList = (props) => {
+const BookList = (props) => {
   const books = props.books
   return (
     <div className="bookList">
@@ -23,4 +23,4 @@ const bookList = (props) => {
   )
 }
 
-export default bookList
+export default BookList
