@@ -33,7 +33,6 @@ class Books extends Component {
     // ]
     axios.get('/books')
     .then((response) => {
-      console.log("did iget in here")
       const books = response.data;
       this.setState({ books: books });
     })
@@ -57,7 +56,7 @@ class Books extends Component {
    } else {
      return ( 
        <div className="error">
-         <p>awwwww shite!</p>
+         <p>Something went wrong, we recieved an error from the server.</p>
        </div>
      )
    }

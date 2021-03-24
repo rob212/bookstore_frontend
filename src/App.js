@@ -13,15 +13,17 @@ function App() {
         <div className="App">
           <Navbar />
         </div>
-        <Switch>
-          <Route path="/" exact component={Home} />
-        </Switch>
-        <Switch>
-          <Route path="/books" exact component={Books} />
-        </Switch>
-        <Switch>
-          <Route path="/about" exact component={About} />
-        </Switch>
+        <main>        
+          <Switch>
+            <Route path="/" exact component={Home} />
+          </Switch>
+          <Switch>
+            <Route path="/books" exact component={Books} />
+          </Switch>
+          <Switch>
+            <Route path="/about" exact component={About} />
+          </Switch>
+        </main>
       </Router>
     </>
   );
