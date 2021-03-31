@@ -35,6 +35,7 @@ class Books extends Component {
     axios.get('/books')
     .then((response) => {
       const books = response.data;
+      console.log(`The book data is: ${books[0].isbn}`);
       this.setState({ books: books });
     })
     .catch((e) => {
@@ -45,6 +46,7 @@ class Books extends Component {
 
  render() {
    const books = this.state.books
+   console.log(`the current error state is ${this.state.error}`)
    if (!this.state.error) {
      return (
        <div className="books">
